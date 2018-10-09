@@ -1,0 +1,32 @@
+#canal相关配置
+canal: 
+  server: 
+    classPath: com.hzy.pojo.
+    ip: 127.0.0.1
+    port: 11111
+    zookeeper: 
+      registry: '127.0.0.1:2181'
+    destination: example01
+    cluster: true
+    subscribe: 
+    loginName: 
+    password: 
+  data: 
+    batch: 
+      size: 1024
+
+
+#spring相关配置=============
+spring:
+  datasource:
+    dbcp2:
+      driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 123456
+
+
+#mybatis相关配置==============
+mybatis:
+  mapper-locations: classpath*:mapper/*Mapper.xml
+  type-aliases-package: com.hzy.pojo
