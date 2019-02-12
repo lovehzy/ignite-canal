@@ -12,6 +12,7 @@ public class ResultUtil<T> implements Serializable{
 	
 	
 	
+	
 	public ResultUtil() {
 		super();
 	}
